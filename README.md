@@ -2,6 +2,15 @@
 create internal network 
 ```
 cd network/
+
+cat terraform.tfvars  ###### change varible accordingly
+router_name     = "int_router"
+ext_net_id      = "185f5c7c-25a3-4799-a30f-0d3a8643c738"
+int_net_name    = "init_net"
+int_sub_name    = "init_sub"
+int_sub_cidr    = "10.10.0.0/24"
+int_sub_gateway = "10.10.0.1"
+
 terraform init
 terraform validate
 terraform plan
