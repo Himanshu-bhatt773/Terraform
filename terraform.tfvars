@@ -1,0 +1,6 @@
+image_name    = "cirros"
+flavor_name   = "mi.yint"
+instance_name = "test1"
+keypair_name  = "test"
+network       = "init_net"
+secgroup_name = "allow_ssh"
