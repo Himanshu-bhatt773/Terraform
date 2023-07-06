@@ -1,4 +1,26 @@
 # Terraform
+###############
+```
+cat provider.tf 
+# Define required providers
+terraform {
+  required_version = ">= 0.14.0"
+  required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+      version = "~> 1.48.0"
+    }
+  }
+}
+
+# Configure the OpenStack Provider
+provider "openstack" {
+  user_name        = "him"
+  password         = "Himanxxxx"
+  auth_url         = "http://x.x.x.98:5000"
+  user_domain_name = "default"
+}
+```
 create internal network 
 ```
 cd network/
